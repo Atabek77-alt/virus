@@ -2,7 +2,7 @@ import pyautogui as pg
 from random import randint
 import time
 import os
-
+import PIL
 # mouse move
 
 # for i in range(5):
@@ -15,13 +15,14 @@ import os
 
 # pg.alert(text='Hello', title="HI", button="OK")
 
-os.system("open -a Notes" )
-time.sleep(2)
-pg.click(x=870, y=510)
-pg.write("Hello world", interval=0.1)
+# os.system("open -a Notes" )
+# time.sleep(2)
+# pg.click(x=870, y=510)
+# pg.write("Hello world", interval=0.1)
 
-    
-    
+
+scr = pg.screenshot("screen.png")
+print(scr)
 
 
 
